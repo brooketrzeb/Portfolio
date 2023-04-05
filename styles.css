@@ -1,0 +1,115 @@
+section{
+    background-color: #d6e9dd;
+    padding: 2rem;
+    margin: 1rem;
+    font-family: "arbotek", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+section>div> h3, h4{
+    font-family: "baskerville-display-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+section>h2{
+    font-family: "baskerville-display-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+Header{
+    background-color: #a39e89;
+    padding: 2rem;
+    margin: 1rem;
+    font-family: "arbotek", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+header>img{
+    width: 300px;
+}
+section>div>img{
+    float:right;
+    width: 150px;
+    margin: .5rem;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+nav>a{
+    background-color:#e0b8b8;
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    justify-content: flex-end;
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    width: calc(50% - 6.25rem);
+    height: 12rem;
+    vertical-align: top;
+}
+.box:last-child{
+    margin-right: 0%;
+}
+.portfolio img{
+    width: 20%;
+    border: 2rem solid #d6e9dd;
+}
+.portfolio section{
+    flex-basis: 100%;
+}
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    gap: 1rem;
+}
+.type{
+    rotate: 270deg;
+}
+main>section>h2{
+    text-align: center;
+}
+@media (min-width:1000px){
+    section>div>img{
+        width: 250px;
+    }
+    .home main{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .about{
+        grid-row: 1 / 3;
+        grid-column: 1/2;
+    }
+    .education{
+        grid-row: 1/2 ;
+        grid-column: 2/4 ;
+    }
+    .projects{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .know{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .contact{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .work{
+        grid-row: 3/5;
+        grid-column: 2/4;
+    }
+    .box{
+        width: 23rem;
+    }
+}
